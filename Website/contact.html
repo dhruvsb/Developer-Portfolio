@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <meta charset="utf-8">
+  <title>Dhruv Shah | Developer</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin:700|Cardo:700|Josefin+Sans:600,700|Lato:400,700|Montserrat:400,600,700|Open+Sans:600,700,800|Raleway:400,500,600,900|Roboto:500,700,900|Source+Serif+Pro:600,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+</head>
+<body>
+  <header>
+    <a href="index.html" id="logo">
+      <h1>Dhruv Shah</h1>
+      <h2>Developer</h2>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Portfolio</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="selected">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id ="wrapper">
+    <section id="primary">
+      <h3>General Information.</h3>
+      <p>Currently not looking for full time job or project, but available for mini-projects and gigs. If you have any questions, please don't hesitate to contact me!</p>
+      <p>Only use  phone contact for urgent inquiries otherwise Twitter and email are the best ways to reach me.</p>
+    </section>
+    <section id="secondary">
+      <h3>Contact Details</h3>
+      <ul class="contact-info">
+        <li class="phone"><a href="tel:+91-7874227770" target="_blank">+91-7874227770</a></li>
+        <li class="email"><a href="mailto:dhruv.tsb@gmail.com" target="_blank">dhruv.tsb@gmail.com</a></li>
+        <li class="twitter"><a href="http://twitter.com/intent/tweet?screen_name=dhruvsb" target="_blank">@DhruvSb</a></li>
+        <li class="facebook"><a href="facebook.com/dhruv.sb" target="_blank">Dhruv Sb</a></li>
+      </ul>
+    </section>
+    <footer>
+    <section>
+    <h4 class="mapblock">Address</h4>
+    <p class="mapblock">106, Riverview appartment, Parle Point <br>
+      Surat, Gujarat <br>
+      India <br>
+      395007</p>
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          var uluru = {lat: 21.1785391, lng: 72.7921885};
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 13,
+            center: uluru
+          });
+          var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+          });
+        }
+      </script>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBcN7F4374STDeYEsShqbi-dVV_RUsHcsg&callback=initMap">
+    </script>
+    </section>
+      <a href="http://twitter.com/dhruvsb"><img src="img/twitter-wrap.png" alt="Twitter Logo" class="social-icon" style="margin-top: 20px"></a>
+      <a href="http://facebook.com/dhruv.sb"><img src="img/facebook-wrap.png" alt="Facebook Logo" class="social-icon" style="margin-top: 20px">
+      </a>
+      <p style="text-align: center;">&copy; 2017 Dhruv Shah</p>
+    </footer>
+  </div>
+</body>
+</html>
